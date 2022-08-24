@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/recompensas">
+    <!--
+
+    -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recompensasRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_overlay_rectangle_ajustes"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/textViewNombreActividadRecompensaEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:background="@color/azul_juego2"
+            android:text="¡Reclamada!"
+            android:visibility="gone"
+            android:textColor="@color/primaryColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewActividadRecompensaEstadoFalse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNombreActividadRecompensa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewActividadRecompensaEstadoFalse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNombreActividadRecompensaEstado" />
+
+        <ImageView
+            android:id="@+id/imageViewActividadRecompensaEstadoFalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconregaloblue48"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNombreActividadRecompensa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewNombreActividadRecompensa"
+            app:layout_constraintTop_toTopOf="@+id/textViewNombreActividadRecompensa" />
+
+        <ImageView
+            android:id="@+id/imageViewActividadRecompensaEstadoTrue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/iconregalogray48"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewNombreActividadRecompensa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewNombreActividadRecompensa"
+            app:layout_constraintTop_toTopOf="@+id/textViewNombreActividadRecompensa" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

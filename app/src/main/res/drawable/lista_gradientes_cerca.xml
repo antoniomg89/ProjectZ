@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca0"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca0_1"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca0_2"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca0_3"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca1"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca2"
+        android:duration="2000" />
+
+    <item
+        android:drawable="@drawable/sensor_shape_button_cerca3"
+        android:duration="2000" />
+</animation-list>

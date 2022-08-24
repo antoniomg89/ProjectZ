@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/recyclerfondo3">
+
+    <TextView
+        android:id="@+id/dialog_titulo_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/juego_especial_sensor"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="3dp"
+        android:background="@color/gris"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_sensor_mensaje1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/juego_especial_adquirir_sensor1"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <TextView
+        android:id="@+id/dialog_sensor_funcionamiento1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="@string/juego_especial_funcionamiento_sensor1"
+        android:fontFamily="@font/poppinsregular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/estadoSensor1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:layout_margin="5dp"
+            android:src="@color/azul" />
+
+        <TextView
+            android:id="@+id/dialog_sensor_funcionamiento2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/juego_especial_funcionamiento_sensor2"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/estadoSensor2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:layout_margin="5dp"
+            android:src="@color/amarillo2" />
+
+        <TextView
+            android:id="@+id/dialog_sensor_funcionamiento3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="@string/juego_especial_funcionamiento_sensor3"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="5dp"
+
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/estadoSensor3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:layout_margin="5dp"
+            android:src="@color/rojo" />
+
+        <TextView
+            android:id="@+id/juego_especial_funcionamiento4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/juego_especial_funcionamiento_sensor4"
+            android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/dialog_sensor_imageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="-30dp"
+            android:src="@drawable/iconticket35"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iconticket35" />
+
+        <ImageView
+            android:id="@+id/dialog_sensor_imgmult"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/iconmultiplicar48"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_sensor_imageView"
+            app:layout_constraintStart_toEndOf="@+id/dialog_sensor_imageView"
+            app:layout_constraintTop_toTopOf="@+id/dialog_sensor_imageView" />
+
+        <TextView
+            android:id="@+id/dialog_sensor_textViewCant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="1"
+            android:textColor="@color/primaryColor"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_sensor_imgmult"
+            app:layout_constraintStart_toEndOf="@+id/dialog_sensor_imgmult"
+            app:layout_constraintTop_toTopOf="@+id/dialog_sensor_imgmult" />
+
+
+        <Button
+            android:id="@+id/button_dialog_adquirir_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/verde"
+            android:gravity="center"
+            android:text="Adquirir"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_sensor_imageView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</LinearLayout>

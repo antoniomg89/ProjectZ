@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="TemaApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
+        <item name="android:fontFamily">@font/shahdserif</item>
+    </style>
+
+    <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+    <style name="TemaMaterialD" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--Material color attributes (dark theme) -->
+        <item name="colorPrimary">@color/negro</item>
+        <item name="colorPrimaryVariant">@color/primaryLightColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">#6FFFE9</item>
+        <item name="android:colorBackground">@color/primaryTextColor</item>
+        <item name="colorError">@color/red_200</item>
+        <item name="colorOnBackground">@color/white_50</item>
+        <item name="colorOnSurface">@color/white_50</item>
+        <item name="android:fontFamily">@font/poppinsregular</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <style name="TemaAzul" parent="FirebaseUI">
+        <!-- Required for sign-in flow styling -->
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+
+        <item name="colorControlNormal">@color/material_green_500</item>
+        <item name="colorControlActivated">@color/material_lime_a700</item>
+        <item name="colorControlHighlight">@color/material_green_a200</item>
+        <item name="android:windowBackground">@color/material_green_50</item>
+    </style>
+
+    <style name="TemaGris" parent="FirebaseUI">
+        <!-- Required for sign-in flow styling -->
+        <item name="colorPrimary">@color/gris</item>
+        <item name="colorPrimaryDark">@color/negro</item>
+        <item name="android:windowBackground">@drawable/loginbackground</item>
+    </style>
+
+    <style name="TemaAzul.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ImageView.Corner" parent="">
+        <item name="cornerSizeTopRight">15%</item>
+        <item name="cornerSizeTopLeft">15%</item>
+        <item name="cornerSizeBottomLeft">15%</item>
+        <item name="cornerSizeBottomRight">15%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gris_clarot</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <!--
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" /> -->
+
+</resources>

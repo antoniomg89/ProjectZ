@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_ofertas"
+        android:icon="@drawable/menu_ruta_selector"
+        android:title="@string/title_ofertas" />
+
+    <item
+        android:id="@+id/navigation_favoritos"
+        android:icon="@drawable/menu_favoritos_selector"
+        android:title="@string/title_favoritos" />
+
+    <item
+        android:id="@+id/navigation_especial"
+        android:icon="@drawable/menu_juegos_selector"
+        android:title="@string/title_juegos"/>
+
+    <item
+        android:id="@+id/navigation_ajustes"
+        android:icon="@drawable/menu_ajustes_selector"
+        android:title="@string/title_perfil" />
+
+</menu>

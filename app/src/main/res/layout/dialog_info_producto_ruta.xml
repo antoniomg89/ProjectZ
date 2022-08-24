@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/recyclerfondo3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textviewdialogrutaempresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gris"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="1dp"
+        android:textSize="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewdialogrutaempresa">
+
+    </TextView>
+
+
+
+    <ImageView
+        android:id="@+id/imageViewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <TextView
+        android:id="@+id/textviewdialoginfodescripcionprecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_overlay_rectangle_ajustes"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProducto" />
+
+    <TextView
+        android:id="@+id/textviewdialoginfodescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_overlay_rectangle_ajustes"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textviewdialoginfoprecio"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProducto" />
+
+    <TextView
+        android:id="@+id/textviewdialoginfoprecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_overlay_rectangle_ajustes"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textviewdialoginfodescripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProducto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

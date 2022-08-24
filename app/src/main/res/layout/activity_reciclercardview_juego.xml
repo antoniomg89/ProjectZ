@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@drawable/ofertas_shape_fondo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_constraint_juego"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textViewFragmentoJuegoTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="En búsqueda de los códigos QR"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewFragmentoJuegoDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentoJuegoTitulo" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFragmentJuegoTrofeo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparente"
+            app:layout_constraintEnd_toStartOf="@id/imageButtonFragmentJuegoDetalles"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentoJuegoDescripcion"
+            app:srcCompat="@drawable/icontrofeo48" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFragmentJuegoDetalles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/transparente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonFragmentJuegoTrofeo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFragmentoJuegoDescripcion"
+            app:srcCompat="@drawable/iconnota48" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/transparente"
+            app:layout_constraintStart_toStartOf="@+id/textViewFragmentJuegoTicket"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoTicket"
+            app:srcCompat="@drawable/iconestrellar20" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoNivel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoNivel"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFragmentJuegoNivel"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoNivel"
+            app:srcCompat="@drawable/iconestrellar20" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoNivel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoNivel2"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFragmentJuegoNivel2"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoNivel2"
+            app:srcCompat="@drawable/iconestrellar20" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoNivel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoNivel3"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFragmentJuegoNivel3"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoNivel3"
+            app:srcCompat="@drawable/iconestrellar20" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoNivel5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparente"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoNivel4"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFragmentJuegoNivel4"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoNivel4"
+            app:srcCompat="@drawable/iconestrellar20" />
+
+        <TextView
+            android:id="@+id/textViewFragmentJuegoRequisitos"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:text="Requisitos: "
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/primaryColor"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewFragmentJuegoTicket"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="-5dp"
+            android:fontFamily="@font/poppinsregular"
+            android:src="@drawable/iconticket35"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewFragmentJuegoRequisitos"
+            app:layout_constraintStart_toEndOf="@+id/textViewFragmentJuegoRequisitos"
+            app:layout_constraintTop_toTopOf="@+id/textViewFragmentJuegoRequisitos" />
+
+        <ImageView
+            android:id="@+id/ajustes_imgmult"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="-3dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppinsregular"
+            android:src="@drawable/iconmultiplicar48"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoTicket"
+            app:layout_constraintStart_toEndOf="@+id/imageViewFragmentJuegoTicket"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoTicket" />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/numberprogressBarFragmentJuego"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/gris"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonFragmentJuegoTrofeo"
+            app:layout_constraintVertical_bias="0.0"
+            app:progress_reached_bar_height="5dp"
+            app:progress_reached_color="@color/amarillo_juego"
+            app:progress_text_color="@color/material_green_500"
+            app:progress_text_size="18sp"
+            app:progress_unreached_color="@color/gris_claro3" />
+
+        <Button
+            android:id="@+id/buttonFragmentJuegoEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/verde"
+            android:gravity="fill_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberprogressBarFragmentJuego" />
+
+        <TextView
+            android:id="@+id/textViewFragmentJuegoTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewFragmentJuegoTicket"
+            app:layout_constraintStart_toEndOf="@+id/ajustes_imgmult"
+            app:layout_constraintTop_toTopOf="@+id/imageViewFragmentJuegoTicket" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

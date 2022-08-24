@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/recyclerfondo3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtro"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="3dp"
+        android:background="@color/gris"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsregular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonNinguno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ninguno"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonValoracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valoración"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+
+            <RadioButton
+                android:id="@+id/radioButtonActivas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activas" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPorFinalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poco para terminar" />
+
+
+        </RadioGroup>
+
+</LinearLayout>

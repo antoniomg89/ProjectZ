@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="false">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Ruta">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/negro"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="10dp"
+        android:text="@string/label_general"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imageViewRuta"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:foreground="@drawable/shape_overlay_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBarRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:isIndicator="true"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:stepSize="0.001"
+        android:theme="@style/RatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRuta"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRuta" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageViewRutaLocal1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLocal1Tick"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRuta"
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_corner_radius="15dip" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageViewRutaLocal2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLocal1Tick2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_corner_radius="15dip" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageViewRutaLocal3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLocal1Tick3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintVertical_bias="0.0"
+        app:riv_corner_radius="15dip" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaFavoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/estrella_36v"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRuta"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/ratingBarRuta"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRuta" />
+
+    <TextView
+        android:id="@+id/textViewRutaNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppinsregular"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRuta"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonRutaCalendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRutaQR" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageButtonLocal1Tick"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="@color/gris_claro2"
+        android:src="@drawable/fondo_estado"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal1"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageButtonLocal1Tick2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="@color/gris_claro2"
+        android:src="@drawable/fondo_estado"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageButtonLocal1Tick3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        app:civ_border_width="10dp"
+        app:civ_border_color="@color/gris_claro2"
+        android:src="@drawable/fondo_estado"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaLocalizacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconsmarcador32"
+        android:padding="5dp"
+        android:background="@drawable/shape_overlay_bottom_left"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:padding="5dp"
+        android:src="@drawable/iconmenu32"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRutaLocalizacion1"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRutaLocalizacion1"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRutaLocalizacion1" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallaoro48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal1Nombre"/>
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallaplata48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal1Nombre"/>
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallabronce48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal1Nombre"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaQR"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/transparente"
+        android:src="@drawable/iconqr64"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRuta" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/transparente"
+        android:src="@drawable/iconcalendar36"
+        android:visibility="invisible"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRutaQR"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonRutaQR"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRutaQR" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaLocalizacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/shape_overlay_bottom_left"
+        android:src="@drawable/iconsmarcador32"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmenu32"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRutaLocalizacion2"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRutaLocalizacion2"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRutaLocalizacion2" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallaoro48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal2Nombre"/>
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallaplata48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal2Nombre"/>
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmedallabronce48"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal2Nombre"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaLocalizacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/shape_overlay_bottom_left"
+        android:src="@drawable/iconsmarcador32"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal3" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorOverlay"
+        android:src="@drawable/iconmenu32"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonRutaLocalizacion3"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRutaLocalizacion3"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonRutaLocalizacion3" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:visibility="gone"
+        android:paddingBottom="5dp"
+        android:src="@drawable/iconmedallaoro48"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal3Nombre" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:visibility="gone"
+        android:paddingBottom="5dp"
+        android:src="@drawable/iconmedallaplata48"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal3Nombre" />
+
+    <ImageView
+        android:id="@+id/imageViewRutaMedalla33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOverlay"
+        android:visibility="gone"
+        android:paddingBottom="5dp"
+        android:src="@drawable/iconmedallabronce48"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocal3Nombre" />
+
+    <TextView
+        android:id="@+id/textViewLocal1Nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/shape_overlay_top"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal1" />
+
+    <TextView
+        android:id="@+id/textViewLocal2Nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_overlay_top"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/colorPrimary"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal2" />
+
+    <TextView
+        android:id="@+id/textViewLocal3Nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_overlay_top"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/colorPrimary"
+        android:maxLines="1"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintTop_toTopOf="@+id/imageViewRutaLocal3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gris"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRutaLocal3" />
+
+    <TextView
+        android:id="@+id/textViewValoracionRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberprogressBarRuta" />
+
+    <TextView
+        android:id="@+id/textViewRankingRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/poppinsregular"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValoracionRuta" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTicketRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:src="@drawable/iconticketdisasbled35"
+        app:layout_constraintBottom_toBottomOf="@+id/numberprogressBarRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numberprogressBarRuta"
+        app:layout_constraintTop_toTopOf="@+id/numberprogressBarRuta" />
+
+    <RatingBar
+        android:id="@+id/ratingBarValoracionUsuario"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:rating="4"
+        android:stepSize="0.5"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewValoracionRuta"
+        app:layout_constraintStart_toEndOf="@+id/textViewValoracionRuta"
+        app:layout_constraintTop_toTopOf="@+id/textViewValoracionRuta" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSeleccionRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/transparente"
+        android:src="@drawable/iconvaloracionranking40"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRankingRuta"
+        app:layout_constraintStart_toEndOf="@+id/textViewRankingRuta"
+        app:layout_constraintTop_toTopOf="@+id/textViewRankingRuta" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEnviarValoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparente"
+        android:layout_marginStart="10dp"
+        android:enabled="false"
+        android:src="@drawable/iconenviargray24"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBarValoracionUsuario"
+        app:layout_constraintStart_toEndOf="@+id/ratingBarValoracionUsuario"
+        app:layout_constraintTop_toTopOf="@+id/ratingBarValoracionUsuario" />
+
+    <TextView
+        android:id="@+id/textViewProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:background="@color/azul_juego1"
+        android:text="Progreso"
+        android:textColor="@color/negro"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonTicketRuta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/numberprogressBarRuta"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+
+        app:progress_current="0"
+        app:progress_reached_bar_height="10dp"
+        app:progress_reached_color="@color/material_green_500"
+        app:progress_text_color="@color/azul_juego1"
+        app:progress_text_size="20sp"
+        app:progress_unreached_color="@color/colorPrimary"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRutaLocal3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProgreso"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonRutaRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparente"
+        android:visibility="gone"
+        android:src="@drawable/iconrepeat35"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonTicketRuta"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonTicketRuta"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonTicketRuta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

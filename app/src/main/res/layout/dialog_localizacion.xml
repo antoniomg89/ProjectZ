@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/recyclerfondo3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Localidad"
+        android:padding="3dp"
+        android:background="@color/gris"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsregular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonGranada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Granada"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonZaidin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zaidín" />
+
+            <RadioButton
+                android:id="@+id/radioButtonLaChana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La Chana" />
+
+        </RadioGroup>
+
+</LinearLayout>

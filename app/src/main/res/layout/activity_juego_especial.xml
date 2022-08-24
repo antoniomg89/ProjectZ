@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JuegoEspecial">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/juegobackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/negro">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:text="@string/label_general" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:background="@color/primaryTextColor">
+
+                <WebView
+                    android:id="@+id/webviewJuegoEspecialReloj"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/linearLayoutJuegoObjetivos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_margin="10dp"
+             android:background="@drawable/ofertas_shape_fondo"
+             android:elevation="5dp"
+             android:padding="5dp">
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/juego_especial_objetivos" />
+
+             <TextView
+                 android:id="@+id/textviewJuegoEspecialObjetivos"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:fontFamily="@font/poppinssemibolditalic"
+                 android:textSize="15sp" />
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_sensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ofertas_shape_fondo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:elevation="8dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonJuegoEspecialMapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/juego_especial_mapa"
+                    android:enabled="false"
+                    android:layout_margin="10dp"
+                    android:background="@color/transparente"
+                    android:src="@drawable/iconjuegolocalizacion48"
+                    tools:ignore="SpeakableTextPresentCheck"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:elevation="8dp"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonJuegoEspecialSensor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:enabled="false"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/juego_especial_sensor"
+                    android:background="@color/transparente"
+                    android:src="@drawable/iconjuegosensor40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:elevation="8dp">
+
+                <ImageButton
+                    android:id="@+id/buttonJuegoEspecialValidar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/juego_especial_escanear"
+                    android:enabled="false"
+                    android:layout_margin="10dp"
+                    android:background="@color/transparente"
+                    android:src="@drawable/iconjuegocamara48"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutJuegoClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/juego_shape_fondoclasf">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewJuegoClasificacionM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="15sp"
+                    android:text="@string/juego_especial_clasificacion"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="center"
+                    android:layout_weight="5"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonJuegoFiltroQR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:fontFamily="@font/poppinsregular"
+                    android:src="@drawable/iconfiltrobl25"
+                    android:enabled="true" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@color/gris"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:fadeScrollbars="false">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewClasificacion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutJuegoPistaDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="80dp"
+            android:background="@color/transparente"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonJuegoEspecialPista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:fontFamily="@font/poppinsregular"
+                    android:src="@drawable/iconjuegopistablanco48"
+                    android:enabled="false"
+                    android:background="@color/transparente"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/buttonJuegoEspecialTutorial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:fontFamily="@font/poppinsregular"
+                    android:src="@drawable/iconjuegodetallesblanco48"
+                    android:enabled="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

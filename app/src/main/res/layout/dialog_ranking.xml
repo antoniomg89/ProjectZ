@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="3dp"
+        android:background="@color/gris"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Ranking" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDialogRankingP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonDialogRankingP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparente"
+                android:enabled="false"
+                android:fontFamily="@font/poppinsregular"
+                android:src="@drawable/iconmedallaoro48"
+                android:text="@string/juego_especial_sensor"/>
+
+            <TextView
+                android:id="@+id/textViewDialogRankingP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="Emp1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonDialogRankingP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparente"
+                android:enabled="false"
+                android:fontFamily="@font/poppinsregular"
+                android:src="@drawable/iconmedallaplata48"
+                android:text="@string/juego_especial_sensor"/>
+
+            <TextView
+                android:id="@+id/textViewDialogRankingP2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="Emp2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonDialogRankingP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparente"
+                android:enabled="false"
+                android:fontFamily="@font/poppinsregular"
+                android:src="@drawable/iconmedallabronce48"
+                android:text="@string/juego_especial_sensor"/>
+
+            <TextView
+                android:id="@+id/textViewDialogRankingP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="16sp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="Emp3"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textViewDialogRankingMensaje1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinsregular"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="Selecciona una medalla para"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewDialogRankingEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDialogRankingMedallas"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonDialogRankingPlata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparente"
+            android:enabled="false"
+            android:fontFamily="@font/poppinsregular"
+            android:src="@drawable/iconmedallaplata48"
+            android:text="@string/juego_especial_sensor" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDialogRankingOro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparente"
+            android:enabled="false"
+            android:fontFamily="@font/poppinsregular"
+            android:src="@drawable/iconmedallaoro48"
+            android:text="@string/juego_especial_sensor" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDialogRankingBronce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparente"
+            android:enabled="false"
+            android:fontFamily="@font/poppinsregular"
+            android:src="@drawable/iconmedallabronce48"
+            android:text="@string/juego_especial_sensor" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDialogRankingResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:text="¡Ranking enviado con éxito!"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/buttonDialogRankingEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Enviar"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryColor"
+        android:textSize="16sp"
+        android:backgroundTint="@color/verde"/>
+
+
+</LinearLayout>

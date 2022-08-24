@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2ffffff</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blanco_gris">#FFFFFF</color>
+    <color name="recompensas">#EDEDED</color>
+    <color name="naranja">#E88711</color>
+    <color name="naranja_claro">#FFDAA8</color>
+    <color name="azul_oscuro">#1A237E</color>
+    <color name="gris_claro2">#A1A1A1</color>
+
+    <color name="material_green_50">#E8F5E9</color>
+    <color name="material_green_500">#00FFFF</color>
+    <color name="material_green_700">#1B389F</color>
+    <color name="material_green_a200">#69F0DC</color>
+    <color name="material_lime_a700">#AEEA00</color>
+    <color name="material_purple_a700">#0073FF</color>
+
+    <color name="servicios_shape_fondo_inactivo">#D1D1D1</color>
+    <color name="servicios_shape_fondo_mantenimiento">#FFFFBA</color>
+    <color name="servicios_shape_fondo_proximamente">#CAFFFF</color>
+    <color name="servicios_shape_fondo_activa">#87E188</color>
+    <color name="servicios_shape_fondo_activa2">#C8FFC0</color>
+    <color name="servicios_shape_fondo_finalizada">#E1A097</color>
+
+    <color name="colorPrimaryt">#66ffffff</color>
+    <color name="colorOverlay">#80000000</color>
+    <color name="colorOverlay2">#BF000000</color>
+    <color name="colorOverlay3">#BFffffff</color>
+    <color name="colorOverlayT">#80000000</color>
+    <color name="azult">#B398DADC</color>
+    <color name="gris">#2B2929</color>
+    <color name="grist">#BF2B2929</color>
+    <color name="gris_claro3">#5F5E5E</color>
+    <color name="gris_claro">#DAD7D7</color>
+    <color name="gris_clarot">#CCFFFFFF</color>
+    <color name="color_precio_fragment">#FFFFFF</color>
+    <color name="verde">#3EEC95</color>
+    <color name="estado3">#87E188</color>
+    <color name="amarillo_juego">#FFFF96</color>
+    <color name="amarillo_juego2">#DFDF9C</color>
+    <color name="amarillo_juego2t">#00DFDF9C</color>
+    <color name="amarillo_juego4">#F8F8BC</color>
+    <color name="amarillo_juego3">#F8F86E</color>
+    <color name="azul_juego1">#6ff9ff</color>
+    <color name="azul_juego1t">#006ff9ff</color>
+    <color name="azul_juego2">#57C2C6</color>
+    <color name="azul_juego3">#4BA7AA</color>
+    <color name="azul">#5FA6ED</color>
+    <color name="azul2">#90CCF0</color>
+    <color name="amarillo">#C9C89B</color>
+    <color name="amarillo2">#C9C877</color>
+    <color name="rojo">#FC584C</color>
+    <color name="rojo2">#FC6B4C</color>
+    <color name="negro">#000000</color>
+    <color name="recyclerfondo">#f7f9fc</color>
+    <color name="recyclerfondo3">#E7EDF6</color>
+    <color name="recyclerfondo3t">#00E7EDF6</color>
+    <color name="ofertafondo">#CCCED1</color>
+    <color name="recyclerfondo2">#CCCED1</color>
+    <color name="transparente">#00000000</color>
+    <color name="transparente2">#00FFFFFF</color>
+    <color name="participacion_fondo_t">#8000FFFF</color>
+
+    <color name="primaryColor">#424242</color>
+    <color name="primaryLightColor">#6d6d6d</color>
+    <color name="primaryULightColor">#938D8D</color>
+    <color name="primaryULightColor2">#F5EBEB</color>
+    <color name="primaryDarkColor">#1b1b1b</color>
+    <color name="secondaryColor">#26c6da</color>
+    <color name="secondaryLightColor">#6ff9ff</color>
+    <color name="secondaryDarkColor">#13708E</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+
+    <!--Color palette-->
+
+    <color name="purple_200">#bb86fc</color> <!--Color primary (dark)-->
+    <color name="purple_500">#6200ee</color> <!--Color primary (light)-->
+    <color name="purple_600">#4b01d0</color> <!--Color primary variant (dark)-->
+    <color name="purple_700">#3700b3</color> <!--Color primary variant (light)-->
+
+    <color name="green_200">#03dac6</color> <!--Color secondary-->
+    <color name="green_500">#018786</color> <!--Color secondary variant-->
+
+    <color name="red_200">#cf6679</color> <!--Color error (dark)-->
+    <color name="red_600">#b00020</color> <!--Color error (light)-->
+
+    <!--Color surface (light), color on error (light), -->
+    <!--color on surface (dark), color on surface (dark)-->
+    <color name="white_50">#FFFFFF</color>
+
+    <color name="black_800">#121212</color> <!--Color surface (dark)-->
+    <!--Color on secondary (light), color on background (light),-->
+    <!--color on surface (light)-->
+    <color name="black_900">#000000</color>
+
+
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/recyclerfondo3">
+
+    <TextView
+        android:id="@+id/dialog_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="3dp"
+        android:background="@color/gris"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/juego_premios" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryLightColor"
+        android:padding="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@color/gris_claro3"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/juego_premio1"/>
+
+            <TextView
+                android:id="@+id/textviewPremios1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@color/gris_claro3"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/juego_premio2"/>
+
+            <TextView
+                android:id="@+id/textviewPremios2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@color/gris_claro3"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/juego_premio3"/>
+
+            <TextView
+                android:id="@+id/textviewPremios3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular"
+                android:background="@color/gris_claro3"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/juego_premio4"/>
+
+            <TextView
+                android:id="@+id/textviewPremios4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppinsregular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

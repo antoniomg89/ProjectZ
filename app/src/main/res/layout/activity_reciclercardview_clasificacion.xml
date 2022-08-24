@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_clasificacion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/principalRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gris">
+
+        <TextView
+            android:id="@+id/textViewRecyclerFechaClasificacionPos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/textViewRecyclerFechaClasificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

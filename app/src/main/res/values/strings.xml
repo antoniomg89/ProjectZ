@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">Project Z</string>
+    <string name="label_general">Project Z</string>
+
+    <string name="facebook_application_id">598709424108352</string>
+    <string name="fb_login_protocol_scheme">fb598709424108352</string>
+
+    <string name="title_ofertas">Rutas</string>
+    <string name="title_favoritos">Favoritos</string>
+    <string name="title_especial">Especial</string>
+    <string name="title_juegos">Juegos</string>
+    <string name="title_perfil">Perfil</string>
+
+    <string name="oferta_mapa">Mapa</string>
+    <string name="oferta_escanear">Validar QR</string>
+    <string name="oferta_información">Información</string>
+
+    <string name="info_empresa">Empresa</string>
+    <string name="info_descripcion">Descripción</string>
+    <string name="info_localidad">Localidad</string>
+    <string name="info_direccion">Dirección</string>
+    <string name="info_inicio">Inicio</string>
+    <string name="info_fin">Fin</string>
+
+    <string name="attr_oferta">Oferta</string>
+    <string name="attr_estado">Estado</string>
+    <string name="attr_exp">Puntos</string>
+    <string name="attr_cantidad">Cantidad disponible</string>
+    <string name="attr_part">Participación</string>
+    <string name="attr_total">Total</string>
+
+    <string name="juego_detalles_ciudad">Ciudad</string>
+    <string name="juego_detalles_fechaC">Inicio</string>
+    <string name="juego_detalles_fechaF">Fin</string>
+    <string name="juego_detalles_participacion">Participaciones requeridas</string>
+    <string name="juego_detalles">Detalles</string>
+    <string name="juego_premios">Premios</string>
+    <string name="juego_premio1">Ganador</string>
+    <string name="juego_premio2">Puestos 2º y 3º</string>
+    <string name="juego_premio3">Puestos 4º a 10º</string>
+    <string name="juego_premio4">Todos los participantes</string>
+
+    <string name="ajustes_noticias">Noticias</string>
+    <string name="ajustes_amigos">Amigos</string>
+    <string name="ajustes_historial">Historial</string>
+    <string name="ajustes_desconectar">Desconectar</string>
+
+    <string name="recycler_label_ciudad">Ciudad</string>
+    <string name="recycler_label_filtro">Filtro</string>
+
+    <string name="dialog_bienvenida_titulo">¡Bienvenido!</string>
+    <string name="dialog_bienvenida_mensaje1">Te damos la bienvenida a Project Z.</string>
+    <string name="dialog_bienvenida_mensaje2">Completa ofertas para acceder al evento especial semanal.</string>
+
+    <string name="dialog_oferta_titulo">¡Enhorabuena!</string>
+    <string name="dialog_oferta_mensaje1">Has realizado con éxito la validación.</string>
+
+    <string name="dialog_progreso_titulo">Progreso actual</string>
+    <string name="dialog_progreso_nivel">Nivel: </string>
+    <string name="dialog_progreso_participacion">Participación: </string>
+
+    <string name="dialog_juego_titulo">¡Enhorabuena!</string>
+    <string name="dialog_juego_mensaje1">Has validado con éxito el código QR.</string>
+
+    <string name="dialog_foto_titulo">Foto de perfil</string>
+    <string name="dialog_foto_mensaje">Buscando una imagen…</string>
+
+    <string name="dialog_juego_participar_titulo">Requisitos</string>
+    <string name="dialog_juego_participar_button">Inscribirme</string>
+
+    <string name="clasificacion_qr1">Clasificación QR 1</string>
+    <string name="clasificacion_qr2">Clasificación QR 2</string>
+    <string name="clasificacion_qr3">Clasificación QR 3</string>
+
+    <string name="dialog_salir">Salir</string>
+
+    <string name="juego_especial_pista">Pista</string>
+    <string name="juego_especial_mapa">Mapa</string>
+    <string name="juego_especial_escanear">Validar</string>
+    <string name="juego_especial_tutorial">Tutorial</string>
+    <string name="juego_especial_objetivos">Objetivo</string>
+    <string name="juego_especial_clasificacion">Clasificación QR 1</string>
+    <string name="juego_especial_sensor">Sensor</string>
+    <string name="juego_especial_adquirir_sensor1">El sensor es una herramienta que detecta códigos dentro de un rango de 100 metros.</string>
+    <string name="juego_especial_adquirir_sensor2">Puedes adquirirlo por</string>
+    <string name="juego_especial_funcionamiento_sensor1">Presiona el sensor. En función de la distancia a la que te encuentres del código qr, el sensor cambiará de color .</string>
+    <string name="juego_especial_funcionamiento_sensor2">El código qr se encuentra a más de 100 metros.</string>
+    <string name="juego_especial_funcionamiento_sensor3">El código qr se encuentra entre los 50 y 100 metros.</string>
+    <string name="juego_especial_funcionamiento_sensor4">El código qr se encuentra a menos de 50 metros.</string>
+    <string name="juego_especial_adquirir_sensor_button">Lo quiero.</string>
+
+    <string name="dialog_fecha_fin_ruta">La ruta termina el:</string>
+    <string name="dialog_fecha_fin_competicion">La competición termina el:</string>
+
+    <string name="dialog_repetir_ruta">Ruta reiniciada.</string>
+
+    <string name="ruta_valorar">Valora esta ruta</string>
+    <string name="ruta_valorada">Ya has valorado esta ruta</string>
+
+    <string name="ranking_hecho">Ya has enviado tu ranking</string>
+    <string name="ranking_por_hacer">Selecciona el ranking de esta ruta</string>
+
+    <string name="euro">€</string>
+
+    <string name="dialog_juego_tutorial">Tutorial</string>
+    <string name="dialog_juego_tutorial_mensaje2">Cuando se valide por primera vez cada código QR, pasados 5 minutos se hará visible la ubicación exacta del código para el resto de participantes. De esta forma podrás tener opciones de ganar hasta el final.</string>
+
+    <string name="juego_clasificacion_fecha">Fecha</string>
+    <string name="juego_clasificacion_usuario">Usuario</string>
+
+    <string-array name="localidades">
+        <item>Granada</item>
+        <item>La Chana</item>
+        <item>Zaidín</item>
+    </string-array>
+
+    <string-array name="filtros_todo">
+        <item>Todas</item>
+        <item>Activas</item>
+        <item>Próximas</item>
+        <item>Valoración</item>
+        <item>Experiencia</item>
+        <item>Participaciones</item>
+        <item>Precio</item>
+    </string-array>
+
+    <string-array name="filtros">
+        <item>Ninguno</item>
+        <item>Estado</item>
+        <item>Experiencia</item>
+        <item>Participación</item>
+        <item>Valoración</item>
+    </string-array>
+
+    <string-array name="filtrosRutas">
+        <item>Ninguno</item>
+        <item>Precio</item>
+        <item>Valoración</item>
+    </string-array>
+
+    <string-array name="estados">
+        <item>Todas</item>
+        <item>Próximamente</item>
+        <item>Activas</item>
+        <item>Finalizadas</item>
+    </string-array>
+
+    <string-array name="experiencia">
+        <item>Sin orden</item>
+        <item>Mayor primero</item>
+        <item>Menor primero</item>
+    </string-array>
+
+    <string-array name="participacion">
+        <item>Sin orden</item>
+        <item>Mayor primero</item>
+        <item>Menor primero</item>
+    </string-array>
+
+    <string-array name="valoracion">
+        <item>Sin orden</item>
+        <item>Mayor primero</item>
+        <item>Menor primero</item>
+    </string-array>
+
+    <string-array name="provincias">
+        <item>Granada</item>
+    </string-array>
+
+    <string-array name="qrs">
+        <item>QR 1</item>
+        <item>QR 2</item>
+        <item>QR 3</item>
+    </string-array>
+
+    <string name="map_id">8f4cd3b3e3883f00</string>
+
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
