@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PrZ.iml" filepath="$PROJECT_DIR$/.idea/modules/PrZ.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PrZ.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PrZ.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PrZ.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PrZ.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PrZ.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PrZ.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PrZ.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PrZ.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProjectZ.iml" filepath="$PROJECT_DIR$/.idea/modules/ProjectZ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectZ.app.unitTest.iml" />
     </modules>
   </component>
 </project>
